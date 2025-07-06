@@ -1,0 +1,17 @@
+Desktop Manager Pro - License Agreement
+
+Copyright (c) 2025 Desktop Manager
+
+This software is provided "as is" without warranty of any kind.
+
+Commercial Use:
+- You may use this software for commercial purposes
+- You may distribute this software as part of your products
+- Attribution is appreciated but not required
+
+Limitations:
+- The software is provided without warranty
+- The author is not liable for any damages
+- Use at your own risk
+
+For support and updates, visit: https://github.com/yourusername/desktop-manager

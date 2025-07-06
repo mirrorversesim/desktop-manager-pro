@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Minimize Other Notepads on New Notepad",
+        "enabled": true,
+        "trigger": {
+            "event_type": "CREATE",
+            "executable_name": "notepad.exe"
+        },
+        "action": {
+            "type": "MINIMIZE_OTHERS_OF_SAME_APP",
+            "exclude_trigger_window": true,
+            "is_visible": true,
+            "is_top_level": true
+        },
+        "priority": 100,
+        "description": "When a new Notepad window is opened, all other currently open and visible Notepad windows will be minimized."
+    },
+    {
+        "name": "Manage Duplicate Folder Windows (Example)",
+        "enabled": true,
+        "trigger": {
+            "event_type": "CREATE",
+            "executable_name": "explorer.exe",
+            "window_class": "CabinetWClass"
+        },
+        "action": {
+            "type": "CLOSE_DUPLICATE_PATH",
+            "exclude_trigger_window": true,
+            "keep_newest_foreground": true
+        },
+        "priority": 90,
+        "description": "When a new folder window is opened to a path already open in another folder window, the older duplicate is closed. (Requires advanced path detection)."
+    }
+] 
