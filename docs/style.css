@@ -1,0 +1,108 @@
+/* Basic Reset & Body Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #E0E0E0; /* Light gray text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the page takes at least full viewport height */
+    overflow-y: auto; /* Allows vertical scrolling if content exceeds viewport height */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    
+    /* --- ANIMATED GRADIENT BACKGROUND --- */
+    background: linear-gradient(270deg, #1a2a6c, #b21f1f, #fdbb2d); /* Deep blue, red, gold */
+    background-size: 600% 600%; /* Make it large for movement */
+    animation: GradientShift 15s ease infinite; /* Slow, continuous animation */
+}
+
+@keyframes GradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container for content */
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background for readability */
+    padding: 40px 60px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5); /* Subtle neon glow effect */
+    max-width: 800px;
+    width: 90%;
+    position: relative; /* For z-index if needed */
+    z-index: 10; /* Ensure content is above background effects */
+    backdrop-filter: blur(5px); /* Optional: Frosted glass effect */
+    -webkit-backdrop-filter: blur(5px); /* For Safari */
+}
+
+h1 {
+    font-size: 3em;
+    color: #00FFFF; /* Bright cyan */
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.7); /* Subtle text glow */
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #FF00FF; /* Bright magenta */
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); /* Magenta glow */
+}
+
+.button:hover {
+    background-color: #CC00CC; /* Darker magenta on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.8);
+}
+
+.info-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.info-section p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.link {
+    color: #00FFFF; /* Cyan link */
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.link:hover {
+    color: #FFFFFF; /* White on hover */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+/* --- MOUSE PARTICLE STYLING --- */
+.mouse-particle {
+    position: fixed; /* Stays relative to viewport */
+    background-color: #FF00FF; /* Magenta, matching button/theme */
+    border-radius: 50%; /* Circle shape */
+    opacity: 0; /* Starts invisible */
+    transform: scale(0); /* Starts very small */
+    pointer-events: none; /* Allows clicks to pass through */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth fade/grow */
+    z-index: 9999; /* Always on top */
+}
+
+/* Optional: Different colors for particles */
+.mouse-particle.blue { background-color: #00FFFF; }
+.mouse-particle.yellow { background-color: #fdbb2d; }
