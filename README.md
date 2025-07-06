@@ -169,13 +169,13 @@ This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.t
 
 ## 🐛 Bug Reports
 
-Please use the [GitHub Issues](https://github.com/yourusername/desktop-manager-pro/issues) page to report bugs or request features.
+Please use the [GitHub Issues](https://github.com/[YOUR_USERNAME]/desktop-manager-pro/issues) page to report bugs or request features.
 
 ## 📞 Support
 
 - **GitHub Issues**: For bug reports and feature requests
-- **Documentation**: Check the [Wiki](https://github.com/yourusername/desktop-manager-pro/wiki) for detailed guides
-- **Releases**: Download the latest version from [Releases](https://github.com/yourusername/desktop-manager-pro/releases)
+- **Documentation**: Check the [Wiki](https://github.com/[YOUR_USERNAME]/desktop-manager-pro/wiki) for detailed guides
+- **Releases**: Download the latest version from [Releases](https://github.com/[YOUR_USERNAME]/desktop-manager-pro/releases)
 
 ## 🎯 Roadmap
 
@@ -187,7 +187,7 @@ Please use the [GitHub Issues](https://github.com/yourusername/desktop-manager-p
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/desktop-manager-pro&type=Date)](https://star-history.com/#yourusername/desktop-manager-pro&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=[YOUR_USERNAME]/desktop-manager-pro&type=Date)](https://star-history.com/#[YOUR_USERNAME]/desktop-manager-pro&Date)
 
 ---
 
